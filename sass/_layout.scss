@@ -5,4 +5,16 @@
   box-shadow: $shadow-dark;
 
   min-height: 100rem;
+  display: flex;
+}
+
+.sidebar {
+  width: 35%;
+  padding: 5rem;
+  background-color: $color-primary;
+}
+
+.main {
+  padding: 5rem;
+  background-color: salmon;
 }

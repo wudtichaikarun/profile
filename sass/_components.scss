@@ -1,0 +1,29 @@
+.image {
+  width: 10rem;
+  height: 10rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.info,
+.social {
+  h3 {
+    font-size: 2rem;
+    border-bottom: 1px solid $color-white;
+    text-transform: uppercase;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &-list {
+    list-style: none;
+  }
+
+  &-item {
+    padding: .4rem 0;
+  }
+}
