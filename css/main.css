@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Yantramanav:100");
+@import url("https://fonts.googleapis.com/css?family=Yantramanav:100,300,900");
 * {
   margin: 0;
   padding: 0; }
@@ -15,7 +15,7 @@ html {
 body {
   font-family: "Yantramanav", sans-serif;
   font-size: 1.3rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.8;
   letter-spacing: .7px;
   color: #ffffff;
@@ -50,6 +50,29 @@ body {
 .social-item {
   padding: .4rem 0; }
 
+.skill:not(:last-child),
+.experience:not(:last-child),
+.education:not(:last-child) {
+  margin-bottom: 5rem; }
+
+.skill h3,
+.experience h3,
+.education h3 {
+  font-size: 2rem;
+  border-bottom: 1px solid #282828;
+  text-transform: uppercase; }
+
+.header {
+  text-transform: uppercase;
+  line-height: .9;
+  margin: 4rem 0; }
+  .header .name {
+    font-weight: 900;
+    font-size: 5rem; }
+  .header .position {
+    font-weight: 300;
+    font-size: 2rem; }
+
 .container {
   max-width: 90rem;
   margin: 2rem auto;
@@ -65,4 +88,4 @@ body {
 
 .main {
   padding: 5rem;
-  background-color: salmon; }
+  color: #282828; }
