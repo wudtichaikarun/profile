@@ -1,6 +1,5 @@
-.sidebar {
-  background-color: red;
-}
-h3 {
-  background-color: pink;
-}
+@import 'base';
+@import 'typography';
+@import 'components';
+@import 'mixins';
+@import 'layout';
