@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Yantramanav:100,300,900");
+@import url("https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,900");
 * {
   margin: 0;
   padding: 0; }
@@ -16,7 +16,7 @@ body {
   font-family: "Yantramanav", sans-serif;
   font-size: 1.3rem;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.3;
   letter-spacing: .7px;
   color: #ffffff;
   background-image: linear-gradient(to right bottom, #282828, #ffffff);
@@ -34,7 +34,9 @@ body {
 
 .info h3,
 .social h3 {
-  font-size: 2rem;
+  padding: .5rem 0;
+  font-size: 1.7rem;
+  font-weight: 400;
   border-bottom: 1px solid #ffffff;
   text-transform: uppercase; }
 
@@ -44,34 +46,59 @@ body {
 
 .info-list,
 .social-list {
-  list-style: none; }
+  list-style: none;
+  padding: .5rem 0; }
 
 .info-item,
 .social-item {
-  padding: .4rem 0; }
+  padding: .5rem 0;
+  display: flex; }
+  .info-item__icon,
+  .social-item__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem; }
+  .info-item__icon > svg, .info-item img,
+  .social-item__icon > svg,
+  .social-item img {
+    width: 2rem;
+    height: 2rem;
+    fill: #ffffff; }
+  .info-item__detail--label,
+  .social-item__detail--label {
+    font-weight: 400;
+    letter-spacing: 1.2px; }
+  .info-item__detail--content,
+  .social-item__detail--content {
+    font-weight: 100;
+    font-size: 1.3rem; }
 
 .skill:not(:last-child),
 .experience:not(:last-child),
 .education:not(:last-child) {
-  margin-bottom: 5rem; }
+  margin-bottom: 3rem; }
 
 .skill h3,
 .experience h3,
 .education h3 {
-  font-size: 2rem;
+  padding: .5rem 0;
+  font-size: 1.7rem;
+  font-weight: 400;
   border-bottom: 1px solid #282828;
   text-transform: uppercase; }
 
 .header {
   text-transform: uppercase;
-  line-height: .9;
-  margin: 4rem 0; }
+  line-height: 1;
+  margin: 3.8rem 0; }
   .header .name {
     font-weight: 900;
-    font-size: 5rem; }
+    font-size: 5rem;
+    letter-spacing: 5px; }
   .header .position {
     font-weight: 300;
-    font-size: 2rem; }
+    font-size: 1.7rem;
+    letter-spacing: 2px; }
 
 .container {
   max-width: 90rem;
