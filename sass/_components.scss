@@ -69,12 +69,13 @@
   }
 }
 
-// SKILLS EXPERIENCE EDUCATION COMPONENT
+// ----- SKILLS, EXPERIENCE, EDUCATION, WORK COMPONENT -----
 .skill,
+.work,
 .experience,
 .education {
   &:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   h3 {
@@ -104,20 +105,41 @@
   }
 }
 
-// EDUCATON COMPONENT
-.education-list {
+// ----- EDUCATON, WORK COMPONENT -----
+// header
+.education-header, .work-header {
+  transform: translate(-1.3rem);
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-column-gap: 1.5rem;
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid $color-primary;
+    border-radius: 50%;
+    position: relative;
+
+    svg {
+      @include position-center;
+      height: 2rem;
+    }
+  }
+}
+// list
+.education-list, .work-list {
   list-style: none;
   position: relative;
 
-  .education-item {
+  .education-item, .work-item {
     overflow: hidden;
     position:relative;
   }
 }
 
-.education-item {
+.education-item, .work-item {
   &:first-child {
-    padding-top: 1rem;
+    padding-top: 2rem;
     margin-top: .5rem;
   }
 
@@ -127,14 +149,13 @@
   }
 
   &__block {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 3rem;
     border: 2px solid $color-primary;
-    background-color: green;
+    background-color: $color-primary;
     border-radius: 50%;
     float: left;
-    z-index: 1;
 
     &::after {
       position: absolute;
@@ -143,13 +164,13 @@
       border: 1px solid $color-primary;
       height: 100%;
       top: 0;
-      left: 1rem;
+      left: .5rem;
     }
   }
 
   &__content {
     display: grid;
-    grid-template-columns: 100px 1fr;
-    margin-bottom: 50px;
+    grid-template-columns: 8rem 1fr;
+    margin-bottom: 2rem;
   }
 }

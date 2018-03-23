@@ -87,11 +87,13 @@ body {
     font-size: 1.3rem; }
 
 .skill:not(:last-child),
+.work:not(:last-child),
 .experience:not(:last-child),
 .education:not(:last-child) {
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 .skill h3,
+.work h3,
 .experience h3,
 .education h3 {
   padding: .5rem 0;
@@ -113,43 +115,60 @@ body {
     font-size: 1.7rem;
     letter-spacing: 2px; }
 
-.education-list {
+.education-header, .work-header {
+  transform: translate(-1.3rem);
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-column-gap: 1.5rem; }
+  .education-header__icon, .work-header__icon {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #282828;
+    border-radius: 50%;
+    position: relative; }
+    .education-header__icon svg, .work-header__icon svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 2rem; }
+
+.education-list, .work-list {
   list-style: none;
   position: relative; }
-  .education-list .education-item {
+  .education-list .education-item, .education-list .work-item, .work-list .education-item, .work-list .work-item {
     overflow: hidden;
     position: relative; }
 
-.education-item:first-child {
-  padding-top: 1rem;
+.education-item:first-child, .work-item:first-child {
+  padding-top: 2rem;
   margin-top: .5rem; }
 
-.education-item:last-child .education-item__block {
+.education-item:last-child .education-item__block, .work-item:last-child .education-item__block, .education-item:last-child .work-item__block, .work-item:last-child .work-item__block {
   position: relative;
   overflow: hidden; }
 
-.education-item__block {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1rem;
+.education-item__block, .work-item__block {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 3rem;
   border: 2px solid #282828;
-  background-color: green;
+  background-color: #282828;
   border-radius: 50%;
-  float: left;
-  z-index: 1; }
-  .education-item__block::after {
+  float: left; }
+  .education-item__block::after, .work-item__block::after {
     position: absolute;
     content: '';
     width: 0;
     border: 1px solid #282828;
     height: 100%;
     top: 0;
-    left: 1rem; }
+    left: .5rem; }
 
-.education-item__content {
+.education-item__content, .work-item__content {
   display: grid;
-  grid-template-columns: 100px 1fr;
-  margin-bottom: 50px; }
+  grid-template-columns: 8rem 1fr;
+  margin-bottom: 2rem; }
 
 .container {
   max-width: 90rem;
