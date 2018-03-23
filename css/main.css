@@ -27,10 +27,23 @@ body {
 .image {
   width: 10rem;
   height: 10rem;
-  background-color: #fff;
+  background-color: white;
   border-radius: 50%;
+  border: 1px solid #ffffff;
   margin: 0 auto;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  position: relative;
+  overflow: hidden; }
+  @media only screen and (max-width: 37.5em) {
+    .image {
+      background-color: skyblue; } }
+  .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    background-size: cover; }
 
 .info h3,
 .social h3 {
@@ -47,7 +60,7 @@ body {
 .info-list,
 .social-list {
   list-style: none;
-  padding: .5rem 0; }
+  padding: 2rem 0; }
 
 .info-item,
 .social-item {
@@ -99,6 +112,44 @@ body {
     font-weight: 300;
     font-size: 1.7rem;
     letter-spacing: 2px; }
+
+.education-list {
+  list-style: none;
+  position: relative; }
+  .education-list .education-item {
+    overflow: hidden;
+    position: relative; }
+
+.education-item:first-child {
+  padding-top: 1rem;
+  margin-top: .5rem; }
+
+.education-item:last-child .education-item__block {
+  position: relative;
+  overflow: hidden; }
+
+.education-item__block {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  border: 2px solid #282828;
+  background-color: green;
+  border-radius: 50%;
+  float: left;
+  z-index: 1; }
+  .education-item__block::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    border: 1px solid #282828;
+    height: 100%;
+    top: 0;
+    left: 1rem; }
+
+.education-item__content {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin-bottom: 50px; }
 
 .container {
   max-width: 90rem;

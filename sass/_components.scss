@@ -1,10 +1,23 @@
 .image {
   width: 10rem;
   height: 10rem;
-  background-color: #fff;
+  background-color: white;
   border-radius: 50%;
+  border: 1px solid $color-white;
   margin: 0 auto;
   margin-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+
+  @include respond(phone) {
+    background-color: skyblue;
+  }
+  
+  img {
+    @include position-center;
+    height: 10rem;
+    background-size: cover;
+  }
 }
 
 .info,
@@ -23,7 +36,7 @@
 
   &-list {
     list-style: none;
-    padding: .5rem 0;
+    padding: 2rem 0;
   }
 
   &-item {
@@ -56,6 +69,7 @@
   }
 }
 
+// SKILLS EXPERIENCE EDUCATION COMPONENT
 .skill,
 .experience,
 .education {
@@ -87,5 +101,55 @@
     font-weight: 300;
     font-size: 1.7rem;
     letter-spacing: 2px;
+  }
+}
+
+// EDUCATON COMPONENT
+.education-list {
+  list-style: none;
+  position: relative;
+
+  .education-item {
+    overflow: hidden;
+    position:relative;
+  }
+}
+
+.education-item {
+  &:first-child {
+    padding-top: 1rem;
+    margin-top: .5rem;
+  }
+
+  &:last-child &__block{
+    position: relative;
+    overflow:hidden;
+  }
+
+  &__block {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border: 2px solid $color-primary;
+    background-color: green;
+    border-radius: 50%;
+    float: left;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      border: 1px solid $color-primary;
+      height: 100%;
+      top: 0;
+      left: 1rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin-bottom: 50px;
   }
 }
