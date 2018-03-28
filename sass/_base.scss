@@ -34,6 +34,12 @@ html {
   font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
 }
 
+a {
+  color: inherit;
+  font-size: inherit;
+  // text-decoration: none;
+}
+
 body {
   font-family: $font-primary;
   font-size: 1.3rem;

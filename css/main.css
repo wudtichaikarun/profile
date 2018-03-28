@@ -12,6 +12,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
+a {
+  color: inherit;
+  font-size: inherit; }
+
 body {
   font-family: "Yantramanav", sans-serif;
   font-size: 1.3rem;
@@ -25,16 +29,16 @@ body {
   min-height: 100vh; }
 
 .image {
-  width: 10rem;
-  height: 10rem;
+  width: 13rem;
+  height: 13rem;
   background-color: white;
   border-radius: 50%;
   border: 1px solid #ffffff;
   margin: 0 auto;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   position: relative;
   overflow: hidden; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 40.625em) {
     .image {
       background-color: skyblue; } }
   .image img {
@@ -42,7 +46,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 10rem;
+    height: 13rem;
     background-size: cover; }
 
 .info h3,
@@ -71,8 +75,8 @@ body {
     width: 2rem;
     height: 2rem;
     margin-right: 1rem; }
-  .info-item__icon > svg, .info-item img,
-  .social-item__icon > svg,
+  .info-item__icon svg, .info-item img,
+  .social-item__icon svg,
   .social-item img {
     width: 2rem;
     height: 2rem;
@@ -81,6 +85,11 @@ body {
   .social-item__detail--label {
     font-weight: 400;
     letter-spacing: 1.2px; }
+    .info-item__detail--label > a,
+    .social-item__detail--label > a {
+      color: inherit;
+      font-size: inherit;
+      text-decoration: none; }
   .info-item__detail--content,
   .social-item__detail--content {
     font-weight: 100;
@@ -108,10 +117,14 @@ body {
   margin: 3.8rem 0; }
   .header .name {
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 4.3rem;
     letter-spacing: 5px; }
+    @media only screen and (max-width: 50em) {
+      .header .name {
+        font-size: 3rem; } }
   .header .position {
     font-weight: 300;
+    padding-left: 1rem;
     font-size: 1.7rem;
     letter-spacing: 2px; }
 
@@ -172,17 +185,28 @@ body {
 
 .container {
   max-width: 90rem;
-  margin: 2rem auto;
+  margin: 3rem auto;
   background-color: #f4f2f2;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
   min-height: 100rem;
   display: flex; }
+  @media only screen and (max-width: 40.625em) {
+    .container {
+      max-width: 100%;
+      margin: 0;
+      flex-direction: column; } }
 
 .sidebar {
   width: 35%;
   padding: 5rem;
   background-color: #282828; }
+  @media only screen and (max-width: 40.625em) {
+    .sidebar {
+      width: 100%; } }
 
 .main {
   padding: 5rem;
   color: #282828; }
+  @media only screen and (max-width: 40.625em) {
+    .main {
+      padding: 0 5rem 5rem; } }

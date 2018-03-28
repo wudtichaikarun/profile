@@ -1,19 +1,30 @@
 .container {
   max-width: 90rem;
-  margin: 2rem auto;
+  margin: 3rem auto;
   background-color: $color-grey-light-2;
   box-shadow: $shadow-dark;
   min-height: 100rem;
   display: flex;
+  @include respond(phone){
+    max-width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
 }
 
 .sidebar {
   width: 35%;
   padding: 5rem;
   background-color: $color-primary;
+  @include respond(phone){
+    width: 100%;
+  }
 }
 
 .main {
   padding: 5rem;
   color: $color-primary;
+  @include respond(phone){
+    padding: 0 5rem 5rem;
+  }
 }
