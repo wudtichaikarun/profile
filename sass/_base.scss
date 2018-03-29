@@ -18,6 +18,10 @@ $shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .2);
 // FONT VARIABLES
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,900');
 $font-primary: 'Yantramanav', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Trirong:100,300,400');
+$font-primary-th: 'Trirong', serif;
+
 * {
   margin: 0;
   padding: 0;

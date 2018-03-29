@@ -96,7 +96,7 @@
 .header {
   text-transform: uppercase;
   line-height: 1;
-  margin: 3.8rem 0;
+  margin: 0 0 3.8rem 0;
 
   .name {
     font-weight: 900;
@@ -136,6 +136,7 @@
     }
   }
 }
+
 // list
 .education-list, .work-list {
   list-style: none;
@@ -182,8 +183,97 @@
   }
 
   &__content {
+    font-family: $font-primary-th;
     display: grid;
     grid-template-columns: 8rem 1fr;
     margin-bottom: 2rem;
   }
+}
+
+//--------------- btn switch---------------
+.btn-switch {
+  margin-left: auto;
+  font-size: 1rem;
+	position: relative;
+  width: 5.4rem;		
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.btn-switch__radio {
+  display: none;
+}
+.btn-switch__label {
+	display: inline-block;	
+	padding: .75rem .5rem .75rem .75rem;
+	vertical-align: top;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.5;
+	color: #fff;
+  cursor: pointer;
+	transition: color .2s ease-in-out;
+}
+.btn-switch__label + .btn-switch__label {
+  padding-right: .7rem;
+	padding-left: 0;
+}
+.btn-switch__txt {
+  font-weight: 300;
+	position: relative;
+	z-index: 2;
+  display: inline-block;
+  min-width: 1.5rem;
+	opacity: 1;
+	pointer-events: none;
+	transition: opacity .2s ease-in-out;
+}
+.btn-switch__radio_no:checked ~ .btn-switch__label_yes .btn-switch__txt,
+.btn-switch__radio_yes:checked ~ .btn-switch__label_no .btn-switch__txt {
+	opacity: 0;
+}
+.btn-switch__label:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+  left: 0;
+	background: $color-grey-light-4;
+	border-radius: 1.5rem;
+	box-shadow: inset 0 .0715rem .3572rem rgba(43,43,43,.05);
+	transition: background .2s ease-in-out;
+}
+.btn-switch__radio_yes:checked ~ .btn-switch__label:before {
+	background: $color-grey-light-4;
+}
+.btn-switch__label_no:after {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	top: .5rem;
+	bottom: .5rem;
+	left: .5rem;
+	width: 2rem;
+	background: #fff;
+	border-radius: 1rem;	
+	pointer-events: none;
+	box-shadow: 0 .1429rem .2143rem rgba(43,43,43,.2), 0 .3572rem .3572rem rgba(43,43,43,.1);
+	transition: left .2s ease-in-out, background .2s ease-in-out;
+}
+.btn-switch__radio_yes:checked ~ .btn-switch__label_no:after {
+	left: calc(100% - 2.5rem);
+	background: #fff;
+}
+.btn-switch__radio_no:checked ~ .btn-switch__label_yes:before,
+.btn-switch__radio_yes:checked ~ .btn-switch__label_no:before {
+	z-index: 1;
+}
+.btn-switch__radio_yes:checked ~ .btn-switch__label_yes {
+  color: #fff;
+}
+.btn-switch__radio_yes:checked + div.--th {
+	display: none;
 }
