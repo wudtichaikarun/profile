@@ -32,6 +32,10 @@
 
   &:not(:last-child) {
     margin-bottom: 2rem;
+
+    @include respond(phone) {
+      margin-bottom: 0.5rem;
+    }
   }
 
   &-list {
@@ -40,7 +44,7 @@
   }
 
   &-item {
-    padding: .5rem 0;
+    padding: .5rem .5rem .5rem 0;
     display: flex;
 
     &__icon {
@@ -75,11 +79,8 @@
   }
 }
 
-// ----- SKILLS, EXPERIENCE, EDUCATION, WORK COMPONENT -----
-.skill,
-.work,
-.experience,
-.education {
+// -----  CONTENTS COMPONENT -----
+.contents {
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -96,14 +97,21 @@
 .header {
   text-transform: uppercase;
   line-height: 1;
-  margin: 0 0 3.8rem 0;
+
+  @include respond(phone) {
+    margin-bottom: 2rem;
+  }
 
   .name {
     font-weight: 900;
-    font-size: 4.3rem;
+    font-size: 5.5rem;
     letter-spacing: 5px;
     @include respond(tab-port){
       font-size: 3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2.2rem;
     }
   }
 
@@ -111,44 +119,61 @@
     font-weight: 300;
     padding-left: 1rem;
     font-size: 1.7rem;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
+    @include respond(tab-port) {
+      font-size: 1.3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1rem;
+      padding-left: .5rem;
+    }
   }
 }
 
-// ----- EDUCATON, WORK COMPONENT -----
-// header
-.education-header, .work-header {
+// -----  CONTENTS COMPONENT -----
+// header flex-container
+ .contents-header {
   transform: translate(-1.3rem);
-  display: grid;
-  grid-template-columns: 4rem 1fr;
-  grid-column-gap: 1.5rem;
+  // display: grid;
+  // grid-template-columns: 4rem 1fr;
+  // grid-column-gap: 1.5rem;
+  display: flex;
+  align-items: center;
 
+  // flex-item
   &__icon {
     width: 4rem;
     height: 4rem;
     border: 1px solid $color-primary;
     border-radius: 50%;
     position: relative;
+    margin-right: 1.5rem;
 
     svg {
       @include position-center;
       height: 2rem;
     }
   }
+
+  // flex-item
+  h3 {
+    flex: 1;
+  }
 }
 
 // list
-.education-list, .work-list {
+ .contents-list {
   list-style: none;
   position: relative;
 
-  .education-item, .work-item {
+ .contents-item {
     overflow: hidden;
     position:relative;
   }
 }
 
-.education-item, .work-item {
+ .contents-item {
   z-index: 1;
 
   &:first-child {
@@ -182,20 +207,44 @@
     }
   }
 
+  // flex-container
   &__content {
     font-family: $font-primary-th;
-    display: grid;
-    grid-template-columns: 8rem 1fr;
+    // display: grid;
+    // grid-template-columns: 8rem 1fr;
+    display: flex;
     margin-bottom: 2rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    // flex-items
+    &--years {
+      flex: 0 0 7.5rem;
+      margin-right: .75rem;
+
+      @include respond(phone) {
+        flex: 0;
+        margin-bottom: .5rem;
+      }
+    }
+
+    // flex-item 
+    &--detail {
+      line-height: 1.9rem;
+      text-transform: lowercase;
+   }
   }
 }
 
+// ICONS SPRITE
 .icon {
   display: inline-block;
   height: 3rem;
   width: 3rem;
   background: url('../img/icon-ex-code.png');
-
+  
   &-react {
     background-position: 0 0;
   }
