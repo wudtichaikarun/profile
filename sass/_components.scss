@@ -103,22 +103,27 @@
 
   &__header {
     margin-bottom: 5rem;
+
+    @include respond(phone) {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
   }
 
   &__content {
 
     &:not(:last-child) {
       margin-bottom: 2rem;
+
+      @include respond(phone) {
+        margin: .5rem;
+      }
     }
   }
 
   .header {
     text-transform: uppercase;
     line-height: 1;
-  
-    @include respond(phone) {
-      margin-bottom: 2rem;
-    }
   
     &__name {
       font-weight: $font-bold;
@@ -204,6 +209,11 @@
         .info__breadcrumb {
           position: relative;
           overflow:hidden;
+
+          @include respond(phone) {
+            position: initial;
+            overflow: visible;
+          }
         }
       }
 
@@ -249,6 +259,7 @@
           @include respond(phone) {
             flex: 0;
             margin-bottom: .5rem;
+            font-weight: $font-middle; 
           }
         }
 
@@ -262,6 +273,12 @@
           &__header {
             font-weight: $font-middle;
             font-size: 1.4rem;
+
+            @include respond(phone) {
+              font-weight: $font-normal;
+              font-size: 1.35rem;
+              font-style: italic;
+            }
 
             &--modifier {
               margin-top: 1rem;
