@@ -9,71 +9,72 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
+  <div class="body">
+    <div class="body__side side">
 
-      <div class="image">
+      <div class="side__image image">
         <!-- my image profile -->
         <img src="/img/profile.jpg" alt="">
       </div>
 
-      <div class="info">
-          <h3>info</h3>
-          <ul class="info-list">
-            <li class="info-item">
-              <div class="info-item__icon">
+      <!-- INFO -->
+      <div class="side__info info">
+          <h3 class="info__header">info</h3>
+          <ul class="info__content">
+            <li class="content">
+              <div class="content__icon">
                 <!-- svg name -->
                 <svg>
                   <use xlink:href="img/sprite.svg#icon-user"></use>
                 </svg>
               </div>
-              <div class="info-item__detail">
-                <p class="info-item__detail--label">Name</p>
-                <p class="info-item__detail--content">Wudtichai Karun</p>
+              <div class="content__desc desc">
+                <p class="desc__main">Name</p>
+                <p class="desc__sub">Wudtichai Karun</p>
               </div>
             </li>
 
-            <li class="info-item">
-              <div class="info-item__icon">
+            <li class="content">
+              <div class="content__icon">
                 <!-- svg adress -->
                 <svg>
                   <use xlink:href="img/sprite.svg#icon-compass"></use>
                 </svg>
               </div>
-              <div class="info-item__detail">
-                <p class="info-item__detail--label">Adress</p>
-                <p class="info-item__detail--content">Nontaburi</p>
+              <div class="content__desc desc">
+                <p class="desc__main">Adress</p>
+                <p class="desc__sub">Nontaburi</p>
               </div>
             </li>
 
-            <li class="info-item">
-              <div class="info-item__icon">
+            <li class="content">
+              <div class="content__icon">
                 <!-- svg phone -->
                 <svg>
                   <use xlink:href="img/sprite.svg#icon-mobile"></use>
                 </svg>
               </div>
-              <div class="info-item__detail">
-                <p class="info-item__detail--label">Phone</p>
-                <p class="info-item__detail--content">089942569</p>
+              <div class="content__desc desc">
+                <p class="desc__main">Phone</p>
+                <p class="desc__sub">089942569</p>
               </div>
             </li>
 
-            <li class="info-item">
-              <div class="info-item__icon">
+            <li class="content">
+              <div class="content__icon">
                 <!-- svg email -->
                 <svg>
                   <use xlink:href="img/sprite.svg#icon-envelop"></use>
                 </svg>
               </div>
-              <div class="info-item__detail">
-                <p class="info-item__detail--label">Email</p>
-                <p class="info-item__detail--content">595159090004@dpu.ac.th</p>
+              <div class="content__desc desc">
+                <p class="desc__main">Email</p>
+                <p class="desc__sub">595159090004@dpu.ac.th</p>
               </div>
             </li>
 
-            <li class="info-item">
-              <div class="info-item__icon">
+            <li class="content">
+              <div class="content__icon">
                 <!-- svg facebook -->
                 <a href="https://github.com/wudtichaikarun" target="black">
                   <svg>
@@ -82,21 +83,22 @@
                 </a>
               </div>
 
-              <div class="info-item__detail">
+              <div class="content__desc desc">
 
-                <p class="info-item__detail--label"><a href="https://www.facebook.com/rmantic2" target="black">Github</a></p>
-                <p class="info-item__detail--content">github.com/wudtichaikarun</p>
+                <p class="desc__main"><a href="https://www.facebook.com/rmantic2" target="black">Github</a></p>
+                <p class="desc__sub">github.com/wudtichaikarun</p>
               </div>
             </li>
 
           </ul>
       </div>
 
-      <div class="social">
-        <h3>Social</h3>
-        <ul class="social-list">
-          <li class="info-item">
-            <div class="info-item__icon">
+      <!-- SOCIAL -->
+      <div class="side__info info">
+        <h3 class="info__header">social</h3>
+        <ul class="info__content">
+          <li class="content">
+            <div class="content__icon">
               <!-- svg facebook -->
               <a href="https://www.facebook.com/rmantic2" target="black">
                 <svg>
@@ -105,14 +107,14 @@
               </a>
 
             </div>
-            <div class="info-item__detail">
-              <p class="info-item__detail--label"><a href="https://www.facebook.com/rmantic2" target="black">Facebook</a></p>
-              <p class="info-item__detail--content">facebook.com/rmantic2</p>
+            <div class="content__desc desc">
+              <p class="desc__main"><a href="https://www.facebook.com/rmantic2" target="black">Facebook</a></p>
+              <p class="desc__sub">facebook.com/rmantic2</p>
             </div>
           </li>
 
-          <li class="info-item">
-            <div class="info-item__icon">
+          <li class="content">
+            <div class="content__icon">
               <!-- svg twiter -->
               <a href="https://www.twitter.com/l2oMan_Tic" target="black">
                 <svg>
@@ -121,14 +123,14 @@
               </a>
 
             </div>
-            <div class="info-item__detail">
-              <p class="info-item__detail--label"><a href="https://www.twitter.com/l2oMan_Tic" target="black" >Twitter</a></p>
-              <p class="info-item__detail--content">twitter.com/l2oMan_Tic</p>
+            <div class="content__desc desc">
+              <p class="desc__main"><a href="https://www.twitter.com/l2oMan_Tic" target="black" >Twitter</a></p>
+              <p class="desc__sub">twitter.com/l2oMan_Tic</p>
             </div>
           </li>
 
-          <li class="info-item">
-            <div class="info-item__icon">
+          <li class="content">
+            <div class="content__icon">
               <!-- svg line -->
               <a>
                 <svg>
@@ -137,20 +139,21 @@
               </a>
             </div>
 
-            <div class="info-item__detail">
-              <p class="info-item__detail--label">Line</p>
-              <p class="info-item__detail--content">id: idlnw</p>
+            <div class="content__desc desc">
+              <p class="desc__main">Line</p>
+              <p class="desc__sub">id: idlnw</p>
             </div>
           </li>
 
         </ul>
       </div>
 
-      <div class="social">
-        <h3>Example Code</h3>
-        <ul class="social-list">
-          <li class="info-item">
-            <div class="info-item__icon">
+      <!-- EXAMPLE CODE -->
+      <div class="side__info info">
+        <h3 class="info__header">Example Code</h3>
+        <ul class="info__content">
+          <li class="content">
+            <div class="content__icon">
               <!-- svg react -->
               <a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=react&type=&language=" target="black">
                 <svg>
@@ -159,14 +162,14 @@
               </a>
             </div>
 
-            <div class="info-item__detail">
-              <p class="info-item__detail--label"><a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=react&type=&language=" target="black">React</a></p>
-              <p class="info-item__detail--content">ex. react and test</p>
+            <div class="content__desc desc">
+              <p class="desc__main"><a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=react&type=&language=" target="black">React</a></p>
+              <p class="desc__sub">react-redux and test</p>
             </div>
           </li>
 
-          <li class="info-item">
-            <div class="info-item__icon"> 
+          <li class="content">
+            <div class="content__icon"> 
               <!-- svg angular -->
               <a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=angular&type=&language=" target="black">
                 <svg>
@@ -175,14 +178,14 @@
               </a>
             </div>
 
-            <div class="info-item__detail">
-              <p class="info-item__detail--label"><a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=angular&type=&language=" target="black">Angular</a></p>
-              <p class="info-item__detail--content">ex. angular2</p>
+            <div class="content__desc desc">
+              <p class="desc__main"><a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=angular&type=&language=" target="black">Angular</a></p>
+              <p class="desc__sub">angular2</p>
             </div>
           </li>
 
-          <li class="info-item">
-            <div class="info-item__icon">
+          <li class="content">
+            <div class="content__icon">
               <!-- svg angular -->
               <a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=nodejs&type=&language=" target="black">
                 <svg>
@@ -190,14 +193,14 @@
                 </svg>
               </a>
             </div>
-            <div class="info-item__detail">
-              <p class="info-item__detail--label"><a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=nodejs&type=&language=" target="black">NodeJs</a></p>
-              <p class="info-item__detail--content">ex. nodeJs</p>
+            <div class="content__desc desc">
+              <p class="desc__main"><a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=nodejs&type=&language=" target="black">NodeJs</a></p>
+              <p class="desc__sub">nodeJs folder by feature</p>
             </div>
           </li>
 
-          <li class="info-item">
-            <div class="info-item__icon">
+          <li class="content">
+            <div class="content__icon">
               <!-- svg sass -->
               <a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=scss&type=&language=" target="black">
                 <svg>
@@ -206,9 +209,9 @@
               </a>
             </div>
 
-            <div class="info-item__detail">
-              <p class="info-item__detail--label"><a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=scss&type=&language=" target="black">Scss</a></p>
-              <p class="info-item__detail--content">ex. scss</p>
+            <div class="content__desc desc">
+              <p class="desc__main"><a href="https://github.com/wudtichaikarun?utf8=%E2%9C%93&tab=repositories&q=scss&type=&language=" target="black">Scss</a></p>
+              <p class="desc__sub">scss bem style</p>
             </div>
           </li>
 
@@ -217,55 +220,55 @@
 
     </div>
 
-    <div class="main">
-      <header class="header">
-        <h1 class="name">wudtichai karun</h1>
-        <h2 class="position">looking for fontend web developer</h2>
+    <div class="body__main main">
+      <header class="main__header header">
+        <h1 class="header__name">wudtichai karun</h1>
+        <h2 class="header__title">looking for fontend web developer</h2>
       </header> 
     
       <!-- EDUCATION -->
-      <div class="contents">
-        <div class="contents-header">
-            <div class="contents-header__icon">
+      <div class="main__content content">
+        <div class="contents__header header">
+            <div class="header__icon">
               <!-- svg name -->
               <svg>
                 <use xlink:href="img/sprite.svg#icon-book"></use>
               </svg>
             </div>
 
-            <h3>education</h3>
-
+            <h3 class="header__text">education</h3>
         </div>
-        <ul class="contents-list">
-          <li class="contents-item">
-              <div class="contents-item__block"></div>
-              <div class="contents-item__content">
-                <div class="contents-item__content--years">2008-2010</div>
-                <div class="contents-item__content--detail">
-                    <b class="--th">วิทยาลัยเทคนิคสกลนคร</b> <br/>
-                    ประกาศนียบัตรวิชาชีพชั้นสูง(ปวส.) สาขาวิชา อิเล็กทรอนิกส์และอุตสาหกรรม 
+
+        <ul class="content__info">
+          <li class="info">
+              <div class="info__breadcrumb"></div>
+              <div class="info__content content">
+                <div class="content__years">2008-2010</div>
+                <div class="content__desc desc">
+                    <p class="desc__header">วิทยาลัยเทคนิคสกลนคร</p>
+                    <p class="desc__info">ประกาศนียบัตรวิชาชีพชั้นสูง(ปวส.) สาขาวิชา อิเล็กทรอนิกส์และอุตสาหกรรม</p> 
                 </div>
               </div>
           </li>
 
-          <li class="contents-item">
-              <div class="contents-item__block"></div>
-              <div class="contents-item__content">
-                <div class="contents-item__content--years">2010-2012</div>
-                <div class="contents-item__content--detail">
-                    <b>มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน(วิทยาเขตสกลนคร)</b> <br/>
-                    อุตสาหกรรมศาสตร์บัณฑิต สาขา-วิศวกรรมไฟฟ้า วิชาเอก-เทคโนโลยีอิเล็กทรอนิกส์  
+          <li class="info">
+              <div class="info__breadcrumb"></div>
+              <div class="info__content content">
+                <div class="content__years">2010-2012</div>
+                <div class="content__desc desc">
+                     <p class="desc__header">มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน(วิทยาเขตสกลนคร)</p>
+                     <p class="desc__info">อุตสาหกรรมศาสตร์บัณฑิต สาขา-วิศวกรรมไฟฟ้า วิชาเอก-เทคโนโลยีอิเล็กทรอนิกส์</p>
                 </div>
               </div>
           </li>
 
-          <li class="contents-item">
-              <div class="contents-item__block"></div>
-              <div class="contents-item__content">
-                <div class="contents-item__content--years">2016-2018</div>
-                <div class="contents-item__content--detail">
-                    <b>มหาวิทยาลัยธุรกิจบัณฑิตย์</b> <br/>
-                    ปริญญาโท(เรียนทุกวิชาครบแล้วแต่ยังไม่ได้ส่งโปรเจคจบ) วิศวกรรมเว็ปและการพัฒนาแอปพลิเคชั่นบนอุปกรณ์พกพา 
+          <li class="info">
+              <div class="info__breadcrumb"></div>
+              <div class="info__content content">
+                <div class="content__years">2016-2018</div>
+                <div class="content__desc desc">
+                   <p class="desc__header">มหาวิทยาลัยธุรกิจบัณฑิตย์</b>
+                   <p class="desc__info">ปริญญาโท(เรียนทุกวิชาครบแล้วแต่ยังไม่ได้ส่งโปรเจคจบ) วิศวกรรมเว็ปและการพัฒนาแอปพลิเคชั่นบนอุปกรณ์พกพา</p>
                 </div>
               </div>
           </li>
@@ -274,39 +277,41 @@
       </div>
 
       <!-- WORK EXPERIENCE -->
-      <div class="contents">
-        <div class="contents-header">
-            <div class="contents-header__icon">
+      <div class="main__content content">
+        <div class="contents__header header">
+            <div class="header__icon">
               <!-- svg name -->
               <svg>
                 <use xlink:href="img/sprite.svg#icon-pencil"></use>
               </svg>
             </div>
 
-            <h3>work experience</h3>
+            <h3 class="header__text">work experience</h3>
         </div>
-        <ul class="contents-list">
-          <li class="contents-item">
-              <div class="contents-item__block"></div>
-              <div class="contents-item__content">
-                <div class="contents-item__content--years">2012-2017</div>
-                <div class="contents-item__content--detail">
-                    <b>บริษัท ไทยสมาร์ทคาร์ด จำกัด</b> <br/>
-                    Senior Field Service & Repair Unit ทำหน้าที่ ซ่อม,ติดตั้ง,ถอน เครื่องรับบัตรเครดิต(EDC) inginego, sagem, pax จัดทำคู่มือ การซ่อม,เซ็ทอัป,ติดตั้ง,ถอน และรับผิดชอบงานโปรเจคต่างๆ
+        
+        <ul class="content__info">
+
+          <li class="info">
+              <div class="info__breadcrumb"></div>
+              <div class="info__content content">
+                <div class="content__years">2012-2017</div>
+                <div class="content__desc desc">
+                    <p class="desc__header">บริษัท ไทยสมาร์ทคาร์ด จำกัด</b>
+                    <p class="desc__info"> Senior Field Service & Repair Unit ทำหน้าที่ ซ่อม,ติดตั้ง,ถอน เครื่องรับบัตรเครดิต(EDC) inginego, sagem, pax จัดทำคู่มือ การซ่อม,เซ็ทอัป,ติดตั้ง,ถอน และรับผิดชอบงานโปรเจคต่างๆ
                     เชี่ยวชาญพิเศษ เรื่องอิเล็กทรอนิกส์ งานซ่อม,วิเคราะวงจร,ออกแบบอุปกรณ์ต่อพ่วงหรือทดสอบการทำงาน(Inspect)
-                   วิเคราะคำนวน เพื่อคาดการณ์เครื่องกลุ่มที่จะก่อให้เกิดปัญหาในอนาคต และทำการแก้ไขก่อนเกิดปัญหาขึ้นจริง
+                   วิเคราะคำนวน เพื่อคาดการณ์เครื่องกลุ่มที่จะก่อให้เกิดปัญหาในอนาคต และทำการแก้ไขก่อนเกิดปัญหาขึ้นจริง </p>
                 </div>
               </div>
           </li>
 
-          <li class="contents-item">
-              <div class="contents-item__block"></div>
-              <div class="contents-item__content">
-                <div class="contents-item__content--years">2017-2018</div>
-                <div class="contents-item__content--detail">
-                    <b>ออกจากงานมาฝึกเขียนโปรแกรม</b> <br/>
-                    (เหตุผลที่ออกจากงาน) งานหมดความท้าทายไม่มีอะไรแปลกใหม่ให้ทำแล้ว
-                    (เหตุผลที่เรียนเขียนโปรแกรม) ผมมีความสุขกับการสร้างบางสิ่งขึ้นมาใช้เองหรือให้คนอื่นใช้ก่อนหน้านี้เป็นฮาร์ดแวร์เปลี่ยนมาลองเป็นซอฟต์แวร์แล้วรู้สึกสนุก มีอะไรใหม่ๆให้ศึกษาตลอด ไม่น่าเบื่อดี 
+          <li class="info">
+              <div class="info__breadcrumb"></div>
+              <div class="info__content content">
+                <div class="content__years">2017-2018</div>
+                <div class="content__desc desc">
+                    <p class="desc__header">ออกจากงานมาฝึกเขียนโปรแกรม</b>
+                    <p class="desc__info">(เหตุผลที่ออกจากงาน) งานหมดความท้าทายไม่มีอะไรแปลกใหม่ให้ทำแล้ว
+                    (เหตุผลที่เรียนเขียนโปรแกรม) ผมมีความสุขกับการสร้างบางสิ่งขึ้นมาใช้เองหรือให้คนอื่นใช้ก่อนหน้านี้เป็นฮาร์ดแวร์เปลี่ยนมาลองเป็นซอฟต์แวร์แล้วรู้สึกสนุก มีอะไรใหม่ๆให้ศึกษาตลอด ไม่น่าเบื่อดี</p>
                 </div>
               </div>
           </li>
@@ -315,50 +320,50 @@
       </div>
 
       <!-- SKILL AND EXPERTZE -->
-      <div class="contents">
-        <div class="contents-header">
-            <div class="contents-header__icon">
+      <div class="main__content content">
+        <div class="contents__header header">
+            <div class="header__icon">
               <!-- svg name -->
               <svg>
                 <use xlink:href="img/sprite.svg#icon-hammer"></use>
               </svg>
             </div>
 
-            <h3>skill and expertze</h3>
+            <h3 class="header__text">skill and expertze</h3>
         </div>
-        <ul class="contents-list">
-          <li class="contents-item">
-              <div class="contents-item__block"></div>
-              <div class="contents-item__content">
-                <div class="contents-item__content--years">Coding</div>
-                <div class="contents-item__content--detail">
-                    <b>Web coding and test</b> <br/>
-                      MEAN stack (Angular2), React redux jest enzyme, PHP mysql ajax jqury, SCSS(BLEM)
-                      <br>
-                    <b>Mobile and cross platform</b> <br/>
-                      Swift, Java(basic), ionic
+        <ul class="content__info">
+          <li class="info">
+              <div class="info__breadcrumb"></div>
+              <div class="info__content content">
+                <div class="content__years">Coding</div>
+                <div class="content__desc desc">
+                     <p class="desc__header">Web coding and test</b>
+                     <p class="desc__info">MEAN stack (Angular2), React redux jest enzyme, PHP mysql ajax jqury, SCSS(BEM)</p>
+                      
+                     <p class="desc__header desc__header--modifier">Mobile and cross platform</p>
+                     <p class="desc__info">Swift, Java(basic), ionic </p>
                 </div>
               </div>
           </li>
 
-          <li class="contents-item">
-              <div class="contents-item__block"></div>
-              <div class="contents-item__content">
-                <div class="contents-item__content--years">Tools</div>
-                <div class="contents-item__content--detail">
-                    <b>Tools, IDE</b> <br/>
-                      webpack, firebase, postman, vscode(mode vim), git, wordpress
+          <li class="info">
+              <div class="info__breadcrumb"></div>
+              <div class="info__content content">
+                <div class="content__years">Tools</div>
+                <div class="content__desc desc">
+                     <p class="desc__header">Tools, IDE</b> <br/>
+                     <p class="desc__info"> webpack, firebase, postman, vscode(mode vim), git, wordpress</p>
                 </div>
               </div>
           </li>
 
-          <li class="contents-item">
-              <div class="contents-item__block"></div>
-              <div class="contents-item__content">
-                <div class="contents-item__content--years">Design</div>
-                <div class="contents-item__content--detail">
-                    <b>Program</b> <br/>
-                      Sketch, Photoshop, Balsamiq 
+          <li class="info">
+              <div class="info__breadcrumb"></div>
+              <div class="info__content content">
+                <div class="content__years">Design</div>
+                <div class="content__desc desc">
+                     <p class="desc__header">Program</b> <br/>
+                     <p class="desc__info">Sketch, Photoshop, Balsamiq</p>
                 </div>
               </div>
           </li>

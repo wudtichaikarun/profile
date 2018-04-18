@@ -1,0 +1,29 @@
+// COLOR VARIABELS
+$color-primary: #282828;
+$color-secondary: #E1DED4;
+$color-white: #ffffff;
+$color-bg-body: #DCD9D4; 
+
+// $color-grey-light-1: #faf9f9;
+$color-grey-light-2: #f4f2f2;
+// $color-grey-light-3: #f0eeee;
+// $color-grey-light-4: #ccc;
+
+// $color-grey-dark-1: #333;
+// $color-grey-dark-2: #777;
+// $color-grey-dark-3: #999;
+
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, .6);
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .2);
+
+// FONT VARIABLES
+// $font-slim: 100;
+$font-normal: 300;
+$font-middle: 400;
+$font-bold: 900;
+
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:300,400,900');
+$font-primary-en: 'Yantramanav', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Trirong:300,400');
+$font-primary-th: 'Trirong', serif;
