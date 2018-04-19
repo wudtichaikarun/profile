@@ -83,10 +83,16 @@ body {
       width: 2rem;
       height: 2rem;
       margin-right: 1rem; }
+      .side .info__content .content__icon--big {
+        width: 2.6rem;
+        height: 2.6rem; }
       .side .info__content .content__icon svg {
         width: 2rem;
         height: 2rem;
         fill: #ffffff; }
+      .side .info__content .content__icon svg.icon--big {
+        width: 2.6rem;
+        height: 2.6rem; }
     .side .info__content .content .desc__main {
       font-weight: 400;
       letter-spacing: 1.2px; }
