@@ -126,8 +126,12 @@
       margin-bottom: 2rem;
 
       @include respond(phone) {
-        margin: .5rem;
+        margin-bottom: 0;
       }
+    }
+
+    @include respond(phone) {
+      margin: .5rem;
     }
   }
 
