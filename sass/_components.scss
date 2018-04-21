@@ -114,6 +114,10 @@
   &__header {
     margin-bottom: 5rem;
 
+    @include respond(tab-port) {
+      margin-bottom: 6.2rem;
+    }
+
     @include respond(phone) {
       text-align: center;
       margin-bottom: 2rem;
