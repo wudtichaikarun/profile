@@ -269,7 +269,7 @@ body {
     @media only screen and (max-width: 40.625em) {
       .body__side {
         width: 100%;
-        padding: 3rem 3rem; } }
+        padding: 4rem 3rem 3rem; } }
   .body__main {
     padding: 8rem 5rem 5rem;
     color: #282828; }
