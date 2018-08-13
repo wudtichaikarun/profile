@@ -7,7 +7,7 @@
   min-height: 100rem;
   display: flex;
 
-  @include respond(phone){
+  @include respond(phone) {
     max-width: 100%;
     margin: 0;
     flex-direction: column;
@@ -17,9 +17,9 @@
     margin: 0;
   }
 
-  // flex-item
+  // flex-ite
   &__side {
-    min-width: 30%;
+    min-width: 32%;
     padding: 5rem 0 5rem 5rem;
     background-color: $color-primary;
 
@@ -28,21 +28,18 @@
       padding: 3rem 0 3rem 3rem;
     }
 
-    @include respond(phone){
+    @include respond(phone) {
       width: 100%;
       padding: 4rem 3rem 3rem;
     }
-  
   }
-  
+
   // flex-item
   &__main {
     padding: 8rem 5rem 5rem;
     color: $color-primary;
-    @include respond(phone){
+    @include respond(phone) {
       padding: 3rem 3rem;
     }
   }
-
 }
-
