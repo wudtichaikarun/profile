@@ -2,4 +2,11 @@ node_modules
 public
 firebase.json
 .firebaserc
-app
+css
+sass
+.firebase
+.gitignore
+index.html
+package-lock.json
+package.json
+yarn.lock
